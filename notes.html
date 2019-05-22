@@ -1,0 +1,125 @@
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img1.jpg" alt="Los Angeles" width="600" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="img1.jpg" alt="Chicago" width="600" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="img1.jpg" alt="New York" width="600" height="500">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+<p><b>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </b></p>
+        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<p><b>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </b></p>
+        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+
+
+<style type="text/css">
+  .{
+  margin:0px;
+  padding:0px;
+  font-family:sans-serif;
+}
+#sidebar{
+  position:fixed;
+  width:200px;
+  height:100%;
+  background:#151719;
+  left:-200px;
+  transition: all 500ms linear;
+}
+
+sidebar.active{
+  left:0px;
+}
+
+#sidebar ul li{
+  color:rgba(230,230,230,230,0.9);
+  list-style:none;
+  padding:15px 10px;
+  border-bottom:1px solid rgba(100,100,100,0.3);
+}
+#sidebar .toggle-btn{
+  position:absolute;
+  left:230px;
+  top:20px;
+}
+#sidebar .toggle-btn span{
+  display:block;
+  width:30px;
+  height:5px;
+  background:#151719;
+  margin: 3px 0px;
+}
+</style>
+
+<script type="text/javascript">
+  
+  function toggleSidebar(){
+  document.getElementById("sidebar").classList.toggle('active');
+}
+</script>
+</head>
+<body>
+<div id="sidebar">
+  <div class="toggle-btn" onclick="toggleSidebar()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+  <ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact</li>
+  </ul>
+</div>
+
+</body>
+</html>
